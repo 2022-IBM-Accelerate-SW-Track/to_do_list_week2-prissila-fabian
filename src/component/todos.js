@@ -21,9 +21,13 @@ const Todos = ({ todos, deleteTodo }) => {
             {/*<CardContent>
               <span style={{ padding: "50px" }}>{todo.content}</span>
                </CardContent>*/}
-             <ListItemButton component="a" href="#simple-list">
-                <Checkbox style={{paddingLeft:0}} color="primary" onClick={() => deleteTodo(todo.id)}/>
-                <ListItemText primary={todo.content}secondary= {todo.date}/>
+            <ListItemButton component="a" href="#simple-list">
+                <Checkbox 
+                style={{paddingLeft:0}} 
+                color="primary" 
+                onClick={() => deleteTodo(todo.id)}
+                />
+                <ListItemText primary={todo.content} secondary={todo.date} />
                 
               </ListItemButton>
           </Card>
